@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(103, 38, 206);
+}
+
+.container {
+    font-size: 16px;
+    background-color: #fff;
+    width: 90vw;
+    max-width: 34em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:  translate(-50%, -50%);
+    padding: 3em;
+    border-radius: 0.6em;
+    box-shadow:  0 1.2em 2.4em rgba(111, 85, 0, 0.25);
+}
+
+#options-container {
+    text-align: center;
+}
+
+#options-container div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 1.2em 0;
+}
+
+#options-container div button {
+    padding: 0.6em 1.2em;
+    border: 3px solid #000;
+    background-color: #fff;
+    border-radius: 0.3em;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+#user-input-section {
+    display: flex;
+    justify-content: center;
+    font-size: 1.8rem;
+    margin: 0.6rem 1.2rem 0;
+}
+
+.hide {
+    display: none;
+}
+
+#options-container .selected {
+    background-color: green;
+    color: black;
+    border: 3px solid #000;
+}
+
+.dashes {
+    margin: 0 5px;
+}
+
+#letter-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.6em;
+}
+
+#letter-container button {
+    height: 2.4em;
+    width: 2.4em;
+    border-radius: 0.3em;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.disabled {
+    background-color:  gray;
+    color: gray;
+}
